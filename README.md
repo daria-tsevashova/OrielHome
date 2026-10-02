@@ -1,5 +1,6 @@
 # Oriel Homes
 
+![Oriel Homes Preview](./public/preview.png)
 > A modern real-estate website concept for finding, renting, buying and investing in homes across Poland.
 
 **Live Demo:** https://oriel-home.vercel.app
