@@ -1,138 +1,129 @@
 # Oriel Homes
 
 ![Oriel Homes Preview](./public/preview.png) 
-> A modern real-estate website concept for finding, renting, buying and investing in homes across Poland.
+> A portfolio project: static real-estate landing page for renting, buying and investing in homes across Poland.
 
 **Live Demo:** https://oriel-home.vercel.app
 
 ## Overview
 
-Oriel is a polished real-estate web experience designed around a simple idea: make finding a home in Poland feel clear, calm and trustworthy.
+Oriel is a portfolio project: a lightweight single-page real-estate landing page designed around a premium editorial layout and a clear local-market narrative. The site presents seven Polish cities, a property carousel, journal-style content, a privacy flow and a lead form.
 
-The project focuses on a premium editorial-style interface combined with practical property discovery features, multilingual communication and a conversion-oriented user journey.
+The project is built as a plain HTML, CSS and JavaScript website, with all logic kept in the browser rather than in a framework.
 
-The website is built as a portfolio concept, with fictional properties, company information and contact details.
+## Features
 
-## ✨ Features
+* city-based property discovery and search filters
+* rent and buy modes with a currency selector
+* responsive hero, city panels and property card carousel
+* scroll-linked motion, parallax and reveal animations
+* journal guides and modal popups
+* privacy policy and cookie consent flow
+* client testimonials carousel
+* contact form with a placeholder webhook flow for lead submission
 
-* 🏠 Property discovery experience
-* 🔎 Search with city, budget and bedroom filters
-* 🏙️ City-focused navigation
-* 💼 Rent / Buy user flows
-* 📋 Services and property support sections
-* 📖 Editorial-style Journal section
-* 💬 Contact / enquiry form
-* 🌍 Multilingual positioning — English, Polish and Ukrainian
-* 💱 Currency selector — PLN, EUR and USD
-* 📱 Responsive design for desktop and mobile
-* 🔐 Privacy policy and consent-focused UX
-* ⚡ Deployed on Vercel
+## Tech Stack
 
-## 🛠️ Tech Stack
+| Layer | Used for |
+| --- | --- |
+| HTML | page structure and content |
+| CSS | layout, styling, responsiveness and motion |
+| JavaScript | rendering, filters, forms, modals and scroll interactions |
+| Google Fonts | Geologica typeface |
+| Cloudinary | property and editorial imagery |
+| Browser APIs | IntersectionObserver, localStorage, dialog, requestAnimationFrame |
 
-* React
-* Next.js
-* TypeScript
-* Tailwind CSS
-* Vercel
-* Git & GitHub
-
-## 🎨 Design Direction
+## Design Direction
 
 The visual direction combines a premium real-estate aesthetic with a clean editorial layout.
 
-The interface was designed with emphasis on:
+The interface is shaped around:
 
-* typography and visual hierarchy
-* generous whitespace
-* neutral, natural colour palette
+* typography and hierarchy
+* generous spacing
+* neutral, natural palette choices
 * high-quality property imagery
-* subtle interactions and transitions
+* subtle UI transitions and motion
 * clear calls to action
-* responsive layouts
-* accessibility and usability
+* responsive layouts for desktop and mobile
 
-The goal was to create a product that feels closer to a real estate brand website than a typical template or generic landing page.
+## AI-Assisted Development
 
-## 🤖 AI-Assisted Development
+AI tools were used during the workflow for exploration, implementation support and iteration.
 
-AI tools were incorporated into the development workflow for exploration, implementation support and iteration.
+They were helpful for:
 
-They were used as part of the development process for tasks such as:
+* generating and refining design and UX ideas
+* supporting the build of layout and interaction patterns
+* reviewing HTML, CSS and JavaScript structure
+* speeding up repetitive front-end tasks
 
-* exploring UI and UX directions
-* generating and refining implementation ideas
-* assisting with component development
-* iterating on layouts and responsive behaviour
-* improving and reviewing parts of the code
-* accelerating repetitive development tasks
+The final decisions, content and implementation were checked and refined as part of the project work.
 
-The final interface, visual direction, structure and implementation decisions were reviewed and refined as part of the development process.
-
-This project reflects a workflow where AI is used as a development tool while keeping product decisions, design direction and final implementation under human control.
-
-## 📁 Project Structure
+## Project Structure
 
 ```text
 .
-├── app/
-│   ├── components/
-│   ├── ...
-│   └── page.tsx
-├── components/
-│   ├── ...
+├── assets/
+│   ├── apple-touch-icon.png   # iOS home screen icon
+│   └── og-image.jpg           # social preview image
+├── css/
+│   └── style.css              # all site styles
+├── favicon-16.png             # favicon variation
+├── favicon-32.png             # favicon variation
+├── favicon.ico               # browser favicon
+├── index.html                 # landing page markup
+├── js/
+│   ├── data.js                # photo, listing, city, guide and testimonial data
+│   ├── main.js                # rendering logic, filters, forms and dialogs
+│   └── scroll.js              # hero scrub, parallax and scroll-linked motion
 ├── public/
-│   ├── images/
-│   └── ...
-├── package.json
-└── README.md
+│   └── preview.png            # project preview image
+├── README.md                 # project documentation
+└── .DS_Store                 # local macOS metadata
 ```
 
-## 🚀 Getting Started
+## Configuration
+
+* `index.html` contains the Open Graph placeholders for `og:image` and `og:url` in the head section, and the GA4 / Meta Pixel placeholders remain as comments to be filled in before deployment.
+* `js/main.js` contains `const LEAD_WEBHOOK_URL = ''; // TODO: paste your Google Apps Script Web App URL here` for the contact form webhook.
+* `assets/apple-touch-icon.png` and `assets/og-image.jpg` are the local asset files used for the touch icon and social preview placeholders.
+
+## Getting Started
 
 ### Prerequisites
 
-* Node.js 18+
-* npm
+* a local browser
+* Python 3 (optional, for a simple local static server)
 
 ### Installation
 
 ```bash
 git clone <repository-url>
 cd oriel-home
-npm install
 ```
 
-### Development
+### Run locally
 
 ```bash
-npm run dev
+python3 -m http.server 8000
 ```
 
-Open:
+Then open:
 
 ```text
-http://localhost:3000
+http://localhost:8000
 ```
 
-### Production Build
+## Deployment
 
-```bash
-npm run build
-npm run start
-```
+This project is a static front-end and can be deployed to any host that serves HTML, CSS and JavaScript files. Update the OG metadata and analytics placeholders before publishing.
 
-## 🌐 Deployment
+## Project Status
 
-The project is deployed with Vercel.
+This is a portfolio project created to demonstrate front-end development, motion design and practical UI implementation for a real-estate brand.
 
-**Live:** https://oriel-home.vercel.app
-
-## 📌 Project Status
-
-This is a portfolio concept created to demonstrate frontend development, UI/UX implementation and modern AI-assisted development workflows.
-
-All company information, listings, statistics and contact details shown on the website are fictional.
+All company information, listings and contact details shown on the site are fictional.
 
 ---
 
@@ -140,6 +131,6 @@ All company information, listings, statistics and contact details shown on the w
 
 **Daria**
 
-Frontend Developer focused on creating polished, responsive and user-centred web experiences.
+Front-end developer focused on polished, responsive and user-centred web experiences.
 
 [GitHub](https://github.com/daria-tsevashova)
