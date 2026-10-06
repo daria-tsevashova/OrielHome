@@ -3,7 +3,7 @@
 ![Oriel Homes Preview](./public/preview.png) 
 > A portfolio project: static real-estate landing page for renting, buying and investing in homes across Poland.
 
-**Live Demo:** https://oriel-home.vercel.app
+**Live Demo:** https://oriel-home.netlify.app
 
 ## Overview
 
